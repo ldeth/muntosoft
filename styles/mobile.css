@@ -1,0 +1,30 @@
+@media (max-width: 1000px) {
+  .home-logo {
+    width: 60%
+  }
+  .full-text {
+    display: none;
+  }
+  .no-full-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-logo {
+    width: 100%
+  }
+  .full-text {
+    display: none;
+  }
+  .no-full-text {
+    display: inline;
+  }
+  .about-img {
+    width: 100px
+  }
+  .list-li {
+    display: flex;
+    flex-direction: column;
+  }
+}

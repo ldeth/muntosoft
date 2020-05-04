@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>muntosoft-site</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/mobile.css">
+  <link rel="stylesheet" href="/styles/colorPalette.css">
+  <link rel="stylesheet" href="/styles/animations.css">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target="#navbarToggler" data-offset="30">
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
+    <a class="navbar-brand" href="#home">
+      <div class="logo"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+      <div class="navbar-nav align-items-end">
+        <a class="nav-item nav-link nav-top" href="#home">INICIO</a>
+        <a class="nav-item nav-link nav-top" href="#aboutus">ACERCA DE</a>
+        <a class="nav-item nav-link nav-top" href="#services">SERVICIOS</a>
+        <a class="nav-item nav-link nav-top" href="#portfolio">PORTAFOLIO</a>
+        <a class="nav-item nav-link nav-top" href="#quotation">COTIZACIÓN</a>
+        <a class="nav-item nav-link nav-top" href="#contact">CONTACTO</a>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVIGATION BAR -->
+
+  <!-- HOME -->
+  <div id="home" class="bg-black position-relative home-area text-color-white">
+    <video autoplay class="home-logo">
+      <source src="/assets/version-B-blackBackground.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+    <div class="container position-absolute text-center d-flex flex-column home-text" style="height: 100%;">
+      <div class="d-flex flex-column justify-content-center align-items-center animation-text my-3">
+        <h4>Si no existe, lo creamos.</h4>
+        <h5>
+          Utilizando tecnologías de última generación y con altos estándares de calidad.
+        </h5>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center animation-text my-3">
+        <h4>Si ya lo tienes, lo innovamos.</h4>
+        <h5>
+          Implementando metodologías eficientes y probadas para dar los mejores resultados.
+        </h5>
+      </div>
+    </div>
+  </div>
+  <!-- END HOME -->
+
+  <!-- ABOUT US -->
+  <div id="aboutus" class="section">
+    <div class="container">
+      <div class="row justify-content-md-center align-items-center">
+        <div class="col-md-auto text-center my-3">
+          <img src="/assets/feedback.svg" class="about-img" alt="">
+        </div>
+        <div class="col col-lg-7 text-justify">
+          <h2 class="font-weight-bold text-color-primary">ACERCA DE</h2>
+          <p class="text-justify">
+            Somos una empresa dedicada al desarrollo de tecnologías para hacer frente a las necesidades de cualquier negocio. 
+            Si en tu empresa tienen áreas de oportunidad y desean combatirlas mediante una plataforma web, bases de datos 
+            o algún tipo de software, ¡nosotros podemos ayudarles!
+            Nuestros servicios están enfocados en la digitalización, por lo que podemos brindar desde consultorías para
+            implementación de nuevas tecnologías hasta desarrollos digitales a la medida de sus necesidades particulares.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <img src="/assets/computer.svg" class="about-img" alt="">
+      </div>
+
+      <nav class="nav nav-tabs nav-fill justify-content-around mt-5" id="nav-tab" role="tablist">
+        <a class="nav-tabs nav-item nav-link active nav-link-tab" id="nav-programming-tab" data-toggle="tab" href="#nav-programming"
+          role="tab" aria-controls="nav-programming" aria-selected="true">
+          <h4 class="full-text">Programming</h4>
+          <h4 class="no-full-text">1</h4>
+        </a>
+        <a class="nav-item nav-link nav-link-tab" id="nav-agile-tab" data-toggle="tab" href="#nav-agile" 
+          role="tab" aria-controls="nav-agile" aria-selected="false">
+          <h4 class="full-text">Metodología Agile</h4>
+          <h4 class="no-full-text">2</h4>
+        </a>
+        <a class="nav-item nav-link nav-link-tab" id="nav-scrum-tab" data-toggle="tab" href="#nav-scrum"
+          role="tab" aria-controls="nav-scrum" aria-selected="false">
+          <h4 class="full-text">SCRUM</h4>
+          <h4 class="no-full-text">3</h4>
+        </a>
+      </nav>
+      
+      <div class="tab-content pt-2 px-4 text-justify" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col col-lg-8 text-justify">
+              <h4 class="text-color-secondary">Complementar y aprovechar las tecnologías</h4>
+              <p class="lead text-color-primary"> Resolver retos con las mejores herramientas, estar a la vanguardia.</p>
+            </div>
+            <div class="col-md-auto text-center">
+              <img src="/assets/technologies.png" width="200" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-agile" role="tabpanel" aria-labelledby="nav-agile-tab">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col-md-auto text-center">
+              <img src="/assets/agile.svg" width="150" alt="">
+            </div>
+            <div class="col col-lg-8 text-justify">
+              <h4 class="text-color-secondary">Somos ágiles</h4>
+              <p class="lead text-color-primary">Aceptamos los cambios y la innovación en los procesos de mejora.</p>
+              <p>Preferimos hacer entregas tempranas y continuas, utilizando como métrica de progreso la funcionalidad del software. Para ello, trabajamos de la mano
+                con nuestro cliente, procurando siempre la mejora continua a través de la retroalimentación.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-scrum" role="tabpanel" aria-labelledby="nav-scrum-tab">
+          <div class="row justify-content-md-center align-items-center">
+            <div class="col col-lg-8 text-justify">
+              <h4 class="text-color-secondary">SCRUM es nuestro marco de trabajo para el desarrollo de software</h4>
+              <p class="lead text-color-primary">Las herramientas están para ayudarnos a ser más ágiles.</p>
+              <p>Priorizamos, dividimos y entregamos software funcional en cada iteración previamente pactada con nuestros clientes.
+                Al final de cada iteración, el cliente evalúa el entregable con la intención de dar retroalimentación al equipo de desarollo.
+              </p>
+              <p> Nuestros procesos son transparentes por lo que nuestros clientes tienen la seguridad de que siempre sabrán que es lo que recibirán al final.</p>
+            </div>
+            <div class="col-md-auto text-center">
+              <img src="/assets/send.svg" width="150" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END ABOUT US -->
+
+  <!-- SERVICES -->
+  <div id="services" class="section">
+    <div class="container">
+      <h2 class="text-center font-weight-bold text-color-primary">NUESTROS SERVICIOS</h2>
+      <div class="row justify-content-md-center align-items-start">
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
+          <div class="text-center">
+            <img src="/assets/gear.svg" width="100" alt="">
+          </div>
+          <h4 class="text-color-secondary"> Desarrollos Tecnológicos </h4>
+          <p class="text-justify">
+            Nosotros podemos ayudarte a hacer de tus ideas una realidad por medio de desarrollo de software.
+          </p>
+          <p class="text-justify">
+            Desde traer tu negocio a la red con una plataforma atractiva para tus clientes hasta una herramienta que facilite las tareas administrativas de tu empresa o incluso una nueva aplicación para tu modelo de negocios.
+          </p>
+        </div>
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
+          <div class="text-center">
+            <img src="/assets/list.svg" width="100" alt="">
+          </div>
+          <h4 class="text-color-secondary"> Consultorías </h4>
+          <p class="text-justify">
+            Nuestro equipo de expertos estará a tu disposición para realizar una profunda investigación de tus necesidades.
+          </p>
+          <p class="text-justify">
+            Recibirás un análisis completo de áreas de oportunidad encontradas y una serie de propuestas que podrás implementar a corto, mediano y largo plazo.
+          </p>
+        </div>
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
+          <div class="text-center">
+            <img src="/assets/server.svg" width="100" alt="">
+          </div>
+          <h4 class="text-color-secondary"> Bases de datos y matenimiento </h4>
+          <p class="text-justify">
+            Realizamos desarrollos que implican la gestión, optimización y configuración de bases de datos para que puedas administrar tu empresa fácilmente.
+          </p>
+          <p class="text-justify">
+            Brindamos planes accesibles de servicio y mantenimiento de todas tus herramientas digitales.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center align-items-center pt-5">
+        <div class="col col-lg-7 text-center">
+          <h4 class="text-color-secondary">Desarrollo de plataformas web </h4>
+          <p class="text-justify">
+            Desarrollamos tu plataforma web enfocándonos en tus necesidades.
+            Estamos comprometidos a manetener una comunicación clara y constante durante el desarrollo para asegurarnos de cumplir
+            con tus espectativas. Al mismo tiempo, aterrizamos los conceptos más técnicos y complicados para facilitar tu participación 
+            en el proceso. Nos encargamos de que la plataforma sea sencilla, práctica y segura.
+          </p>
+        </div>
+        <div class="col-md-auto text-center my-3">
+          <img src="/assets/layout.svg" width="150" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END SERVICES -->
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio" class="section">
+    <div class="container">
+      <h2 class="text-center font-weight-bold text-color-primary">PORTAFOLIO</h2>
+      <div class="row justify-content-md-center align-items-center my-4">
+        <div class="col col-lg-3 d-flex justify-content-center my-3">
+          <div class="card border-none" style="width: 18rem;">
+            <img src="/assets/activminds.png" width="100%" alt="">
+            <div class="card-body">
+              <h5 class="card-title text-color-secondary text-center">Aktivminds</h5>
+              <p class="card-text">Actualización y optimización de plataforma junto con base de datos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-auto col-lg-3 d-flex justify-content-center my-3">
+          <div class="card border-none" style="width: 18rem;">
+            <img src="/assets/kaanemy.png" width="100%" alt="">
+            <div class="card-body">
+              <h5 class="card-title text-color-secondary text-center">Kaanemy</h5>
+              <p class="card-text">Plataforma educativa que permite contactar un asesor dispuesto a ayudar a sus alumnos en las materias de su expertise.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 d-flex justify-content-center my-3">
+          <div class="card align-items-center border-none" style="width: 18rem;">
+            <img src="/assets/gyc_chico.gif" width="150" alt="">
+            <div class="card-body">
+              <h5 class="card-title text-color-secondary text-center">GaboYCandido.com</h5>
+              <p class="card-text">Desarrollo que permitió transaladar el método físico de pedir material en un almacén a una plataforma digital.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-auto col-lg-3 d-flex justify-content-center my-3">
+          <div class="card border-none" style="width: 18rem;">
+            <img src="/assets/dentistas.png" width="100%" alt="">
+            <div class="card-body">
+              <h5 class="card-title text-color-secondary text-center">TuDentista.com</h5>
+              <p class="card-text">Organiza tus citas, ten a la mano la información de tus pacientes y vuelvete más ágil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END PORTFOLIO -->
+  
+  <!-- QUOTATION -->
+  <div id="quotation" class="section">
+    <div class="container">
+      <h2 class="text-center font-weight-bold text-color-primary">COTIZACIÓN</h2>
+
+      <div class="row">
+        <div class="col d-flex align-items-center">
+          <ul class="list-unstyled hover-element">
+            <li class="list-li media align-items-center my-2">
+              <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
+                1
+              </div>
+              <div class="media-body text-justify border-bottom py-3">
+                <h5 class="text-color-secondary">Realiza un Cotización</h5>
+                <p>El primer paso consiste en enscribirnos los requerimientos que tienes con enfoque en el diseño y funcionalidades que deseas.  </p>
+              </div>
+            </li>
+            <li class="list-li media align-items-center my-2">
+              <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
+                2
+              </div>
+              <div class="media-body text-justify border-bottom py-3">
+                <h5 class="text-color-secondary">Recibe Propuestas</h5>
+                <p>Una vez entendiendo tus necesidades, trabajaremos en algunas propuestas y la cotización. ¡Te contactaremos para explicártelas! </p>
+              </div>
+            </li>
+            <li class="list-li media align-items-center my-2">
+              <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
+                3
+              </div>
+              <div class="media-body text-justify border-bottom py-3">
+                <h5 class="text-color-secondary">Recibe avances de tu desarrollo</h5>
+                  <p>Una vez empezada la etapa de desarrollo, estaremos estrechamente en contacto para que vayas
+                    validando las funcionalidades y requerimientos que pediste. </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="contact-subtitle">¡Cuéntanos sobre lo que estás buscando y nos pondremos en contacto!</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Nombre Completo *"
+                    required="required" data-validation-required-message="Nombre y apellidos">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="company" type="text" placeholder="Compañía *"
+                    required="required" data-validation-required-message="Nombre de tu compañia">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Correo electrónico *"
+                    required="required" data-validation-required-message="direccion@ejemplo.com">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Teléfono *"
+                    required="required" data-validation-required-message="Ej. 55551234">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Cuéntanos sobre tus necesidades para cotizarte el mejor plan *"
+                    required="required" data-validation-required-message="Descríbe aquí qué es lo que estás buscando"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputService"><i class="contact-questions">¿Qué servicio te interesa?</i></label>
+                <select id="inputService" class="form-control">
+                  <option selected>Páginas web</option>
+                  <option>Aplicaciones móviles</option>
+                  <option>Software administrativo</option>
+                  <option>Consultoría</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputDevelop"><i class="contact-questions">¿A qué segmento pertenece tu empresa?</i></label>
+                <select id="inputDevelop" class="form-control">
+                  <option selected>Desarrollo Tecnológico</option>
+                  <option>Finanzas y Administración</option>
+                  <option>Ingeniería y Manufactura</option>
+                  <option>Servicios de Salud</option>
+                  <option>Marketing</option>
+                  <option>Recursos Humanos</option>
+                  <option>Consultoría</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="inputContact"><i class="contact-questions">¿Por qué medio prefieres que te contactemos?</i></label>
+                <select id="inputContact" class="form-control">
+                  <option selected>Teléfono</option>
+                  <option>Correo electrónico</option>
+                </select>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-xl text-uppercase bg-button text-color-white"
+                    type="submit">Enviar Mensaje</button>
+              </div>
+
+              
+              <div class="col-lg-12 text-center mt-4">
+                <h2 class="section-heading text-uppercase"></h2>
+                <h4 class="contact-subtitle">Si prefieres Cotizar por Whatsapp:</h4>
+              </a>
+              </div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <a id="sendMessageButton" class="btn btn-success btn-xl text-uppercase"
+                    href="https://api.whatsapp.com/send?phone=5215529728543&text=%c2%a1%20Contacta%20a%20Muntosoft%20para%20cualquier%20cotización,%20comentario%20o%20duda%20%21&source=&data=&app_absent="
+                    target="_blank">
+                    Mensaje por Whatsapp
+                </a>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END QUOTATION -->
+
+  <!-- FAQ -->
+  <div class="section">
+    <div class="container">
+      <h3 class="text-center font-weight-bold text-color-primary">PREGUNTAS FRECUENTES</h3>
+
+      <div class="row pt-4">
+        <div class="col-md-6 text-justify">
+          <h4 class="mb-3 text-color-secondary">¿Si quiero un desarrollo tengo que elegir el tipo de dispositivo y sistema operativo donde lo quiero?</h4>
+          <p class="light-font mb-5">Los desarrollos que realizamos son responsivos, lo que significa que los puedes utilizar en cualquier dispositivo 
+            (IOS, Android, Windows, etc.) asegurando un excelente diseño y funcionalidad en todos. </p>
+          <h4 class="mb-3 text-color-secondary">¿Salen muy caros los desarrollos?</h4>
+          <p class="light-font mb-5">¡NO! Al realizarte la cotización, puedes mencionar cuál es el presupuesto que tienes. 
+            Nosotros te haremos propuestas que se ajusten a tus necesidades y presupuesto. </p>
+        </div>
+        <div class="col-md-6 text-justify">
+            <h4 class="mb-3 text-color-secondary">¿Tengo que decirle a Muntosoft específicamente lo que deseo, aunque no lo tenga muy claro?</h4>
+            <p class="light-font mb-5">No. Muntosoft brinda consultorías. Lo único que tienes que saber es el área de oportunidad que tienes. 
+              Después de escucharte, te brindaremos propuestas para que puedas incrementar tus ganancias y enfocarte en la mejora continua de tus negocios. </p>
+            <h4 class="mb-3 text-color-secondary">¿Cuánto se tardan en un desarrollo?</h4>
+            <p class="light-font mb-5">Todo depende de la complejidad que nos pidan. 
+              Los desarrollos pueden ser tan sencillos que se terminen en semanas o tan complejos que se realicen durante años. </p>
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <!-- END FAQ -->
+
+  <!-- CONTACT -->
+  <div id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center font-weight-bold text-color-primary">CONTACTO</h2>
+
+      <div class="row">
+        <div class="col text-center text-color-secondary">
+          <p class="mb-2"> <span class="ti-location-pin mr-2"></span> ATIZAPÁN, ESTADO DE MÉXICO, MÉXICO</p>
+          <div class=" d-block d-sm-inline-block">
+            <p class="mb-2">
+              <span class="ti-email mr-2"></span> <a class="mr-4" href="contacto@muntosoft.com">contacto@muntosoft.com</a>
+            </p>
+          </div>
+          <div class="d-block d-sm-inline-block">
+            <p class="mb-0">
+              <span class="ti-headphone-alt mr-2"></span> <a href="tel:51836362800">(+521) 55-2972-8543 &nbsp o &nbsp (+521) 55-1296-3247</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+  <!-- END CONTACT -->
+
+  <footer class="my-5 text-center">
+    <!-- Copyright removal is not prohibited! -->
+    <p class="mb-2"><small>COPYRIGHT © 2020. ALL RIGHTS RESERVED. POWERED BY <a href="https://muntosoft.com">MUNTOSOFT</a></small></p>
+    <small><div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="/scripts/script.js"></script>
+</body>
+</html>

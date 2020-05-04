@@ -1,0 +1,78 @@
+body{
+  background-color: #ffffff;
+  font-family: 'Quicksand'; 
+  user-select: none;
+}
+
+.is-scrolling {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.logo {
+  width: 150px;
+  height: 39px;
+  background-repeat: no-repeat;
+}
+
+/* .whiteLogo {
+  background-image: url(/assets/muntosoftLogo_white.svg);
+} */
+
+.blackLogo {
+  background-image: url(/assets/muntosoftLogo_black.svg);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.home-area {
+  padding-top: 65px;
+  width: 100%;
+  height: 570px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.home-logo {
+  width: 40%;
+}
+
+.home-text {
+  bottom: 15px;
+  height: unset !important;
+}
+
+.section{
+  padding-top: 65px;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  width: 150px;
+}
+
+.nav-tabs {
+  border-bottom-color: #A7207D;
+}
+
+.nav-link-tab.active {
+  color: #81166F !important;
+  border-color: #A7207D #A7207D #ffffff !important;
+}
+
+.no-full-text {
+  display: none;
+}
+
+.hover-element li:hover .circle{
+  background-color: #25283D;
+  color: #ffffff;
+}

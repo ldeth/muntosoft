@@ -1,0 +1,44 @@
+/* Backgrounds */
+.bg-general {
+  background-color: #ffffff;
+}
+
+.bg-button {
+  background-color: #25283D;
+}
+
+/* Text */
+.text-color-white {
+  color: #ffffff
+}
+
+.text-color-primary {
+  color: #25283D
+}
+
+.text-color-secondary {
+  color: #4B3F72
+}
+
+.nav-link-top.active {
+  color:  #81166F !important;
+}
+
+a {
+  color: #495057;
+}
+
+a:hover {
+  color: #A7207D;
+}
+
+
+/* Borders */
+.border-none {
+  border: unset
+}
+
+.border-one {
+  border: 1px solid;
+  border-color: #25283d;
+}
