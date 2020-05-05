@@ -26,9 +26,7 @@ $(function() {
     if ($(window).scrollTop() > 518) {
       $logo.addClass('blackLogo')
       $navTop.addClass('nav-link-top')
-      // $logo.removeClass('whiteLogo')
     } else {
-      // $logo.addClass('whiteLogo')
       $logo.removeClass('blackLogo')
       $navTop.removeClass('nav-link-top')
     }
@@ -38,3 +36,15 @@ $(function() {
       menuscroll();
   });
 });
+
+// ******************************************************************
+
+$('.nav-top').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
+
+let video = document.getElementById("video");
+
+function reproduceLogo() {
+  video.play();
+}

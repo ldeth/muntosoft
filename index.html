@@ -23,7 +23,7 @@
 <body data-spy="scroll" data-target="#navbarToggler" data-offset="30">
   <!-- NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
-    <a class="navbar-brand" href="#home">
+    <a onclick="reproduceLogo()" class="navbar-brand" href="#home">
       <div class="logo"></div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -33,7 +33,7 @@
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <div class="navbar-nav align-items-end">
-        <a class="nav-item nav-link nav-top" href="#home">INICIO</a>
+        <a onclick="reproduceLogo()" class="nav-item nav-link nav-top"  href="#home">INICIO</a>
         <a class="nav-item nav-link nav-top" href="#aboutus">ACERCA DE</a>
         <a class="nav-item nav-link nav-top" href="#services">SERVICIOS</a>
         <a class="nav-item nav-link nav-top" href="#portfolio">PORTAFOLIO</a>
@@ -46,9 +46,10 @@
 
   <!-- HOME -->
   <div id="home" class="bg-black position-relative home-area text-color-white">
-    <video autoplay class="home-logo">
-      <source src="/assets/version-B-blackBackground.mp4" type="video/mp4">
-        Sorry, your browser doesn't support embedded videos.
+    <video id="video" muted="muted" autoplay class="home-logo">
+      <source src="/assets/logo.webm" type="video/webm">
+      <source src="/assets/logo.mp4" type="video/mp4">
+      <p>This browser does not support the video element.</p>
     </video>
     <div class="container position-absolute text-center d-flex flex-column home-text" style="height: 100%;">
       <div class="d-flex flex-column justify-content-center align-items-center animation-text my-3">
@@ -303,7 +304,7 @@
 
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h4 class="contact-subtitle">¡Cuéntanos sobre lo que estás buscando y nos pondremos en contacto!</h4>
+          <h4 class="contact-subtitle text-color-primary">¡Cuéntanos sobre lo que estás buscando y nos pondremos en contacto!</h4>
         </div>
       </div>
       <div class="row">
@@ -341,7 +342,7 @@
               </div>
 
               <div class="form-group col-md-4">
-                <label for="inputService"><i class="contact-questions">¿Qué servicio te interesa?</i></label>
+                <label for="inputService"><i class="contact-questions text-color-general">¿Qué servicio te interesa?</i></label>
                 <select id="inputService" class="form-control">
                   <option selected>Páginas web</option>
                   <option>Aplicaciones móviles</option>
@@ -352,7 +353,7 @@
               </div>
 
               <div class="form-group col-md-4">
-                <label for="inputDevelop"><i class="contact-questions">¿A qué segmento pertenece tu empresa?</i></label>
+                <label for="inputDevelop"><i class="contact-questions text-color-general">¿A qué segmento pertenece tu empresa?</i></label>
                 <select id="inputDevelop" class="form-control">
                   <option selected>Desarrollo Tecnológico</option>
                   <option>Finanzas y Administración</option>
@@ -366,7 +367,7 @@
               </div>
 
               <div class="form-group col-md-4">
-                <label for="inputContact"><i class="contact-questions">¿Por qué medio prefieres que te contactemos?</i></label>
+                <label for="inputContact"><i class="contact-questions text-color-general">¿Por qué medio prefieres que te contactemos?</i></label>
                 <select id="inputContact" class="form-control">
                   <option selected>Teléfono</option>
                   <option>Correo electrónico</option>
@@ -383,7 +384,7 @@
               
               <div class="col-lg-12 text-center mt-4">
                 <h2 class="section-heading text-uppercase"></h2>
-                <h4 class="contact-subtitle">Si prefieres Cotizar por Whatsapp:</h4>
+                <h4 class="contact-subtitle text-color-primary">Si prefieres Cotizar por Whatsapp:</h4>
               </a>
               </div>
               <div class="col-lg-12 text-center">
