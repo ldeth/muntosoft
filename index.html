@@ -19,6 +19,9 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Muli|Quicksand&display=swap" rel="stylesheet">
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body data-spy="scroll" data-target="#navbarToggler" data-offset="30">
   <!-- NAVIGATION BAR -->
@@ -71,24 +74,26 @@
   <!-- ABOUT US -->
   <div id="aboutus" class="section-block">
     <div class="container">
-      <div class="row justify-content-md-center align-items-center">
-        <div class="col-md-auto text-center my-3">
-          <img src="/assets/feedback.svg" class="about-img" alt="">
+      <div data-aos="fade-up">
+        <div class="row justify-content-md-center align-items-center">
+          <div class="col-md-auto text-center my-3">
+            <img src="/assets/feedback.svg" class="about-img" alt="">
+          </div>
+          <div class="col col-lg-7 text-justify">
+            <h2 class="font-weight-bold text-color-primary">ACERCA DE</h2>
+            <p class="text-justify">
+              Somos una empresa dedicada al desarrollo de tecnologías para hacer frente a las necesidades de cualquier negocio. 
+              Si en tu empresa tienen áreas de oportunidad y desean combatirlas mediante una plataforma web, bases de datos 
+              o algún tipo de software, ¡nosotros podemos ayudarles!
+              Nuestros servicios están enfocados en la digitalización, por lo que podemos brindar desde consultorías para
+              implementación de nuevas tecnologías hasta desarrollos digitales a la medida de sus necesidades particulares.
+            </p>
+          </div>
         </div>
-        <div class="col col-lg-7 text-justify">
-          <h2 class="font-weight-bold text-color-primary">ACERCA DE</h2>
-          <p class="text-justify">
-            Somos una empresa dedicada al desarrollo de tecnologías para hacer frente a las necesidades de cualquier negocio. 
-            Si en tu empresa tienen áreas de oportunidad y desean combatirlas mediante una plataforma web, bases de datos 
-            o algún tipo de software, ¡nosotros podemos ayudarles!
-            Nuestros servicios están enfocados en la digitalización, por lo que podemos brindar desde consultorías para
-            implementación de nuevas tecnologías hasta desarrollos digitales a la medida de sus necesidades particulares.
-          </p>
-        </div>
-      </div>
 
-      <div class="text-center">
-        <img src="/assets/computer.svg" class="about-img" alt="">
+        <div class="text-center">
+          <img src="/assets/computer.svg" class="about-img" alt="">
+        </div>
       </div>
 
       <nav class="nav nav-tabs nav-fill justify-content-around mt-5" id="nav-tab" role="tablist">
@@ -158,47 +163,53 @@
   <!-- SERVICES -->
   <div id="services" class="section-block">
     <div class="container">
-      <h2 class="text-center font-weight-bold text-color-primary">NUESTROS SERVICIOS</h2>
+      <h2 class="text-center font-weight-bold text-color-primary" data-aos="fade-in">NUESTROS SERVICIOS</h2>
       <div class="row justify-content-md-center align-items-start">
         <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
-          <div class="text-center">
-            <img src="/assets/gear.svg" width="100" alt="">
+          <div data-aos="fade-up">
+            <div class="text-center">
+              <img src="/assets/gear.svg" width="100" alt="">
+            </div>
+            <h4 class="text-color-secondary"> Desarrollos Tecnológicos </h4>
+            <p class="text-justify">
+              Nosotros podemos ayudarte a hacer de tus ideas una realidad por medio de desarrollo de software.
+            </p>
+            <p class="text-justify">
+              Desde traer tu negocio a la red con una plataforma atractiva para tus clientes hasta una herramienta que facilite las tareas administrativas de tu empresa o incluso una nueva aplicación para tu modelo de negocios.
+            </p>
           </div>
-          <h4 class="text-color-secondary"> Desarrollos Tecnológicos </h4>
-          <p class="text-justify">
-            Nosotros podemos ayudarte a hacer de tus ideas una realidad por medio de desarrollo de software.
-          </p>
-          <p class="text-justify">
-            Desde traer tu negocio a la red con una plataforma atractiva para tus clientes hasta una herramienta que facilite las tareas administrativas de tu empresa o incluso una nueva aplicación para tu modelo de negocios.
-          </p>
+        </div>
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4" >
+          <div data-aos="fade-up" data-aos-duration="700">
+            <div class="text-center">
+              <img src="/assets/list.svg" width="100" alt="">
+            </div>
+            <h4 class="text-color-secondary"> Consultorías </h4>
+            <p class="text-justify">
+              Nuestro equipo de expertos estará a tu disposición para realizar una profunda investigación de tus necesidades.
+            </p>
+            <p class="text-justify">
+              Recibirás un análisis completo de áreas de oportunidad encontradas y una serie de propuestas que podrás implementar a corto, mediano y largo plazo.
+            </p>
+          </div>
         </div>
         <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
-          <div class="text-center">
-            <img src="/assets/list.svg" width="100" alt="">
+          <div data-aos="fade-up" data-aos-duration="1300">
+            <div class="text-center">
+              <img src="/assets/server.svg" width="100" alt="">
+            </div>
+            <h4 class="text-color-secondary"> Bases de datos y matenimiento </h4>
+            <p class="text-justify">
+              Realizamos desarrollos que implican la gestión, optimización y configuración de bases de datos para que puedas administrar tu empresa fácilmente.
+            </p>
+            <p class="text-justify">
+              Brindamos planes accesibles de servicio y mantenimiento de todas tus herramientas digitales.
+            </p>
           </div>
-          <h4 class="text-color-secondary"> Consultorías </h4>
-          <p class="text-justify">
-            Nuestro equipo de expertos estará a tu disposición para realizar una profunda investigación de tus necesidades.
-          </p>
-          <p class="text-justify">
-            Recibirás un análisis completo de áreas de oportunidad encontradas y una serie de propuestas que podrás implementar a corto, mediano y largo plazo.
-          </p>
-        </div>
-        <div class="col-md-4 text-center d-flex flex-column justify-content-center my-4">
-          <div class="text-center">
-            <img src="/assets/server.svg" width="100" alt="">
-          </div>
-          <h4 class="text-color-secondary"> Bases de datos y matenimiento </h4>
-          <p class="text-justify">
-            Realizamos desarrollos que implican la gestión, optimización y configuración de bases de datos para que puedas administrar tu empresa fácilmente.
-          </p>
-          <p class="text-justify">
-            Brindamos planes accesibles de servicio y mantenimiento de todas tus herramientas digitales.
-          </p>
         </div>
       </div>
 
-      <div class="row justify-content-md-center align-items-center pt-5">
+      <div class="row justify-content-md-center align-items-center pt-5" data-aos="fade-down">
         <div class="col col-lg-7 text-center">
           <h4 class="text-color-secondary">Desarrollo de plataformas web </h4>
           <p class="text-justify">
@@ -219,10 +230,10 @@
   <!-- PORTFOLIO -->
   <div id="portfolio" class="section-block">
     <div class="container">
-      <h2 class="text-center font-weight-bold text-color-primary">PORTAFOLIO</h2>
+      <h2 class="text-center font-weight-bold text-color-primary" data-aos="zoom-in">PORTAFOLIO</h2>
       <div class="row justify-content-md-center align-items-center my-4">
         <div class="col col-lg-3 d-flex justify-content-center my-3">
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card border-none" style="width: 18rem;" data-aos="flip-down">
             <img src="/assets/activminds.png" width="100%" alt="">
             <div class="card-body">
               <h5 class="card-title text-color-secondary text-center">Aktivminds</h5>
@@ -231,7 +242,7 @@
           </div>
         </div>
         <div class="col-md-auto col-lg-3 d-flex justify-content-center my-3">
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card border-none" style="width: 18rem;" data-aos="flip-up">
             <img src="/assets/kaanemy.png" width="100%" alt="">
             <div class="card-body">
               <h5 class="card-title text-color-secondary text-center">Kaanemy</h5>
@@ -249,7 +260,7 @@
           </div>
         </div>
         <div class="col-md-auto col-lg-3 d-flex justify-content-center my-3">
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card border-none" style="width: 18rem;" data-aos="flip-down">
             <img src="/assets/dentistas.png" width="100%" alt="">
             <div class="card-body">
               <h5 class="card-title text-color-secondary text-center">TuDentista.com</h5>
@@ -265,12 +276,12 @@
   <!-- QUOTATION -->
   <div id="quotation" class="section-block">
     <div class="container">
-      <h2 class="text-center font-weight-bold text-color-primary">COTIZACIÓN</h2>
+      <h2 class="text-center font-weight-bold text-color-primary" data-aos="fade-down">COTIZACIÓN</h2>
 
       <div class="row">
         <div class="col d-flex align-items-center">
           <ul class="list-unstyled hover-element">
-            <li class="list-li media align-items-center my-2">
+            <li class="list-li media align-items-center my-2" data-aos="fade-right">
               <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
                 1
               </div>
@@ -279,7 +290,7 @@
                 <p>El primer paso consiste en enscribirnos los requerimientos que tienes con enfoque en el diseño y funcionalidades que deseas.  </p>
               </div>
             </li>
-            <li class="list-li media align-items-center my-2">
+            <li class="list-li media align-items-center my-2" data-aos="fade-right">
               <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
                 2
               </div>
@@ -288,7 +299,7 @@
                 <p>Una vez entendiendo tus necesidades, trabajaremos en algunas propuestas y la cotización. ¡Te contactaremos para explicártelas! </p>
               </div>
             </li>
-            <li class="list-li media align-items-center my-2">
+            <li class="list-li media align-items-center my-2" data-aos="fade-right">
               <div class="circle border border-light rounded-circle d-flex justify-content-center align-items-center mr-4" style="width: 50px; height: 50px;">
                 3
               </div>
@@ -409,24 +420,32 @@
   <!-- FAQ -->
   <div class="section-block">
     <div class="container">
-      <h3 class="text-center font-weight-bold text-color-primary">PREGUNTAS FRECUENTES</h3>
+      <h3 class="text-center font-weight-bold text-color-primary" data-aos="fade-in">PREGUNTAS FRECUENTES</h3>
 
       <div class="row pt-4">
         <div class="col-md-6 text-justify">
-          <h4 class="mb-3 text-color-secondary">¿Si quiero un desarrollo tengo que elegir el tipo de dispositivo y sistema operativo donde lo quiero?</h4>
-          <p class="light-font mb-5">Los desarrollos que realizamos son responsivos, lo que significa que los puedes utilizar en cualquier dispositivo 
-            (IOS, Android, Windows, etc.) asegurando un excelente diseño y funcionalidad en todos. </p>
-          <h4 class="mb-3 text-color-secondary">¿Salen muy caros los desarrollos?</h4>
-          <p class="light-font mb-5">¡NO! Al realizarte la cotización, puedes mencionar cuál es el presupuesto que tienes. 
-            Nosotros te haremos propuestas que se ajusten a tus necesidades y presupuesto. </p>
+          <div data-aos="fade-up">
+            <h4 class="mb-3 text-color-secondary">¿Si quiero un desarrollo tengo que elegir el tipo de dispositivo y sistema operativo donde lo quiero?</h4>
+            <p class="light-font mb-5">Los desarrollos que realizamos son responsivos, lo que significa que los puedes utilizar en cualquier dispositivo 
+              (IOS, Android, Windows, etc.) asegurando un excelente diseño y funcionalidad en todos. </p>
+          </div>
+          <div data-aos="fade-up">
+            <h4 class="mb-3 text-color-secondary">¿Salen muy caros los desarrollos?</h4>
+            <p class="light-font mb-5">¡NO! Al realizarte la cotización, puedes mencionar cuál es el presupuesto que tienes. 
+              Nosotros te haremos propuestas que se ajusten a tus necesidades y presupuesto. </p>
+          </div>
         </div>
         <div class="col-md-6 text-justify">
+          <div data-aos="fade-up">
             <h4 class="mb-3 text-color-secondary">¿Tengo que decirle a Muntosoft específicamente lo que deseo, aunque no lo tenga muy claro?</h4>
             <p class="light-font mb-5">No. Muntosoft brinda consultorías. Lo único que tienes que saber es el área de oportunidad que tienes. 
               Después de escucharte, te brindaremos propuestas para que puedas incrementar tus ganancias y enfocarte en la mejora continua de tus negocios. </p>
+          </div>
+          <div data-aos="fade-up">
             <h4 class="mb-3 text-color-secondary">¿Cuánto se tardan en un desarrollo?</h4>
             <p class="light-font mb-5">Todo depende de la complejidad que nos pidan. 
               Los desarrollos pueden ser tan sencillos que se terminen en semanas o tan complejos que se realicen durante años. </p>
+          </div>
         </div>
     </div>
 
@@ -470,5 +489,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="/scripts/script.js"></script>
+  
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
